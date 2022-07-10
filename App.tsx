@@ -1,117 +1,51 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
-import React, {type PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const Section: React.FC<
-  PropsWithChildren<{
-    title: string;
-  }>
-> = ({children, title}) => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
+import React from 'react';
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {ShareFile, useGetShare} from './src/useGetShare';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+  const files = useGetShare();
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+  const renderFile = (file: ShareFile, index: number) => {
+    return Object.keys(file).map((key: string, i: number) => {
+      // @ts-ignore
+      if (file[key]) {
+        return (
+          <Text key={`file${index}field${i}`}>
+            {/* @ts-ignore*/}
+            <Text style={{fontWeight: 'bold'}}>{key}</Text>: {file[key]}
+          </Text>
+        );
+      }
+      return null;
+    });
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
+    <SafeAreaView style={styles.container}>
+      {files ? (
+        <>
+          {files?.map((file, index) => (
+            <View key={`file${index}`} style={styles.file}>
+              <Text style={styles.fileTitle}>File {index + 1}</Text>
+              {renderFile(file, index)}
+            </View>
+          ))}
+        </>
+      ) : (
+        <Text style={{color: 'black'}}>No files</Text>
+      )}
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  container: {flex: 1, alignSelf: 'center', justifyContent: 'center'},
+  image: {width: 200, height: 200},
+  file: {
+    padding: 20,
+    borderWidth: 1,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
+  fileTitle: {fontWeight: 'bold', backgroundColor: 'rgba(150, 150, 150, 0.3)'},
 });
 
 export default App;

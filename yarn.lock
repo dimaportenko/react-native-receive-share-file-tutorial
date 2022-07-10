@@ -5644,6 +5644,11 @@ react-native-gradle-plugin@^0.0.7:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.0.7.tgz#96602f909745239deab7b589443f14fce5da2056"
   integrity sha512-+4JpbIx42zGTONhBTIXSyfyHICHC29VTvhkkoUOJAh/XHPEixpuBduYgf6Y4y9wsN1ARlQhBBoptTvXvAFQf5g==
 
+react-native-receive-sharing-intent@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-receive-sharing-intent/-/react-native-receive-sharing-intent-2.0.0.tgz#0d835387976e2343f85f0172522e83233a09c0d9"
+  integrity sha512-JFSO8mZm/hU0EJQYhC5z2m1iiMwJhD9CQ/hYQ8t1UQ9mQynoS/yo+hjX2T6hFXa8mtzlwO/BFwKZjBaVNPdWuw==
+
 react-native@0.69.1:
   version "0.69.1"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.69.1.tgz#093363ea697185b5d8f0e523fce3654b833ad0be"
