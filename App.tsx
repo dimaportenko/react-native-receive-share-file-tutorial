@@ -7,9 +7,11 @@ const App = () => {
 
   const renderFile = (file: ShareFile, index: number) => {
     return Object.keys(file).map((key: string, i: number) => {
+      // @ts-ignore
       if (file[key]) {
         return (
           <Text key={`file${index}field${i}`}>
+            {/* @ts-ignore*/}
             <Text style={{fontWeight: 'bold'}}>{key}</Text>: {file[key]}
           </Text>
         );
@@ -30,7 +32,7 @@ const App = () => {
           ))}
         </>
       ) : (
-        <Text>No files</Text>
+        <Text style={{color: 'black'}}>No files</Text>
       )}
     </SafeAreaView>
   );
