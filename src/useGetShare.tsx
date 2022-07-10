@@ -27,7 +27,7 @@ export const useGetShare = () => {
       error => {
         console.log(error);
       },
-      'ShareMedia', // share url protocol (must be unique to your app, suggest using your apple bundle id)
+      'dimaportenko', // share url protocol (must be unique to your app, suggest using your apple bundle id)
     );
   }, []);
 

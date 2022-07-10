@@ -20,12 +20,18 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      {files?.map((file, index) => (
-        <View key={`file${index}`} style={styles.file}>
-          <Text style={styles.fileTitle}>File {index + 1}</Text>
-          {renderFile(file, index)}
-        </View>
-      ))}
+      {files ? (
+        <>
+          {files?.map((file, index) => (
+            <View key={`file${index}`} style={styles.file}>
+              <Text style={styles.fileTitle}>File {index + 1}</Text>
+              {renderFile(file, index)}
+            </View>
+          ))}
+        </>
+      ) : (
+        <Text>No files</Text>
+      )}
     </SafeAreaView>
   );
 };

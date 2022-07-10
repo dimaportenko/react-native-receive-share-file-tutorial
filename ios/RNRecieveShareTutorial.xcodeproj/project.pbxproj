@@ -12,6 +12,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		717D667E287B0428000751C1 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D667D287B0428000751C1 /* ShareViewController.swift */; };
+		717D6681287B0428000751C1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717D667F287B0428000751C1 /* MainInterface.storyboard */; };
+		717D6685287B0428000751C1 /* RNRecieveShareTutorial Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 717D667B287B0428000751C1 /* RNRecieveShareTutorial Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7699B88040F8A987B510C191 /* libPods-RNRecieveShareTutorial-RNRecieveShareTutorialTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNRecieveShareTutorial-RNRecieveShareTutorialTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -24,7 +27,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = RNRecieveShareTutorial;
 		};
+		717D6683287B0428000751C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 717D667A287B0428000751C1;
+			remoteInfo = "RNRecieveShareTutorial Share";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		717D6686287B0428000751C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				717D6685287B0428000751C1 /* RNRecieveShareTutorial Share.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* RNRecieveShareTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNRecieveShareTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +65,12 @@
 		5709B34CF0A7D63546082F79 /* Pods-RNRecieveShareTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNRecieveShareTutorial.release.xcconfig"; path = "Target Support Files/Pods-RNRecieveShareTutorial/Pods-RNRecieveShareTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-RNRecieveShareTutorial-RNRecieveShareTutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNRecieveShareTutorial-RNRecieveShareTutorialTests.debug.xcconfig"; path = "Target Support Files/Pods-RNRecieveShareTutorial-RNRecieveShareTutorialTests/Pods-RNRecieveShareTutorial-RNRecieveShareTutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-RNRecieveShareTutorial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNRecieveShareTutorial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		717D667B287B0428000751C1 /* RNRecieveShareTutorial Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RNRecieveShareTutorial Share.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		717D667D287B0428000751C1 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		717D6680287B0428000751C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		717D6682287B0428000751C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717D668A287B0509000751C1 /* RNRecieveShareTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RNRecieveShareTutorial.entitlements; path = RNRecieveShareTutorial/RNRecieveShareTutorial.entitlements; sourceTree = "<group>"; };
+		717D668B287B0545000751C1 /* RNRecieveShareTutorial Share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RNRecieveShareTutorial Share.entitlements"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNRecieveShareTutorial/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNRecieveShareTutorial-RNRecieveShareTutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNRecieveShareTutorial-RNRecieveShareTutorialTests.release.xcconfig"; path = "Target Support Files/Pods-RNRecieveShareTutorial-RNRecieveShareTutorialTests/Pods-RNRecieveShareTutorial-RNRecieveShareTutorialTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -60,6 +90,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-RNRecieveShareTutorial.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717D6678287B0428000751C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +123,7 @@
 		13B07FAE1A68108700A75B9A /* RNRecieveShareTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				717D668A287B0509000751C1 /* RNRecieveShareTutorial.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -106,6 +144,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		717D667C287B0428000751C1 /* RNRecieveShareTutorial Share */ = {
+			isa = PBXGroup;
+			children = (
+				717D668B287B0545000751C1 /* RNRecieveShareTutorial Share.entitlements */,
+				717D667D287B0428000751C1 /* ShareViewController.swift */,
+				717D667F287B0428000751C1 /* MainInterface.storyboard */,
+				717D6682287B0428000751C1 /* Info.plist */,
+			);
+			path = "RNRecieveShareTutorial Share";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +168,7 @@
 				13B07FAE1A68108700A75B9A /* RNRecieveShareTutorial */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNRecieveShareTutorialTests */,
+				717D667C287B0428000751C1 /* RNRecieveShareTutorial Share */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -133,6 +183,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* RNRecieveShareTutorial.app */,
 				00E356EE1AD99517003FC87E /* RNRecieveShareTutorialTests.xctest */,
+				717D667B287B0428000751C1 /* RNRecieveShareTutorial Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,15 +235,34 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				717D6686287B0428000751C1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				717D6684287B0428000751C1 /* PBXTargetDependency */,
 			);
 			name = RNRecieveShareTutorial;
 			productName = RNRecieveShareTutorial;
 			productReference = 13B07F961A680F5B00A75B9A /* RNRecieveShareTutorial.app */;
 			productType = "com.apple.product-type.application";
+		};
+		717D667A287B0428000751C1 /* RNRecieveShareTutorial Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717D6689287B0428000751C1 /* Build configuration list for PBXNativeTarget "RNRecieveShareTutorial Share" */;
+			buildPhases = (
+				717D6677287B0428000751C1 /* Sources */,
+				717D6678287B0428000751C1 /* Frameworks */,
+				717D6679287B0428000751C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNRecieveShareTutorial Share";
+			productName = "RNRecieveShareTutorial Share";
+			productReference = 717D667B287B0428000751C1 /* RNRecieveShareTutorial Share.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,6 +270,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -208,6 +279,9 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					717D667A287B0428000751C1 = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
@@ -226,6 +300,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* RNRecieveShareTutorial */,
 				00E356ED1AD99517003FC87E /* RNRecieveShareTutorialTests */,
+				717D667A287B0428000751C1 /* RNRecieveShareTutorial Share */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +319,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717D6679287B0428000751C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717D6681287B0428000751C1 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +500,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		717D6677287B0428000751C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717D667E287B0428000751C1 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -425,7 +516,23 @@
 			target = 13B07F861A680F5B00A75B9A /* RNRecieveShareTutorial */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
+		717D6684287B0428000751C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 717D667A287B0428000751C1 /* RNRecieveShareTutorial Share */;
+			targetProxy = 717D6683287B0428000751C1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		717D667F287B0428000751C1 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				717D6680287B0428000751C1 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
@@ -483,9 +590,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-RNRecieveShareTutorial.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RNRecieveShareTutorial/RNRecieveShareTutorial.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HNVBRBU7PH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RNRecieveShareTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,9 +619,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-RNRecieveShareTutorial.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RNRecieveShareTutorial/RNRecieveShareTutorial.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HNVBRBU7PH;
 				INFOPLIST_FILE = RNRecieveShareTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,6 +639,84 @@
 				PRODUCT_NAME = RNRecieveShareTutorial;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		717D6687287B0428000751C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "RNRecieveShareTutorial Share/RNRecieveShareTutorial Share.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HNVBRBU7PH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RNRecieveShareTutorial Share/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RNRecieveShareTutorial Share";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.RNRecieveShareTutorial.RNRecieveShareTutorial-Share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		717D6688287B0428000751C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "RNRecieveShareTutorial Share/RNRecieveShareTutorial Share.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HNVBRBU7PH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RNRecieveShareTutorial Share/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RNRecieveShareTutorial Share";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.RNRecieveShareTutorial.RNRecieveShareTutorial-Share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -562,7 +753,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -634,7 +825,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -683,6 +874,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717D6689287B0428000751C1 /* Build configuration list for PBXNativeTarget "RNRecieveShareTutorial Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717D6687287B0428000751C1 /* Debug */,
+				717D6688287B0428000751C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
