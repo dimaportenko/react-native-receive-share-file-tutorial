@@ -24,5 +24,8 @@ Video - https://youtu.be/MWokVi0tLV8
 react-native-receive-sharing-intent library - https://github.com/ajith-ab/react-native-receive-sharing-intent
 
 ## 🎬 Demo
-![iOS](docs/ios.gif)
-![Android](docs/android.gif)
+
+| Android |                   iOS                    | 
+| :---: |:----------------------------------------:| 
+| <img height="400" src="docs/android.gif" />| <img height="400"  src="docs/ios.gif" /> |
+
