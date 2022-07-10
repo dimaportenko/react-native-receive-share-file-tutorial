@@ -2,6 +2,8 @@
   package="com.rnrecievesharetutorial">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
       android:name=".MainApplication"
@@ -9,6 +11,7 @@
       android:icon="@mipmap/ic_launcher"
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
+      android:launchMode="singleTask"
       android:theme="@style/AppTheme">
       <activity
         android:name=".MainActivity"
@@ -21,6 +24,23 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
+
+          <!--TODO: Add this filter, if you want to support sharing images into your app-->
+          <intent-filter>
+              <action android:name="android.intent.action.SEND" />
+              <category android:name="android.intent.category.DEFAULT" />
+              <data android:mimeType="image/*" />
+              <data android:mimeType="video/*" />
+              <data android:mimeType="application/pdf" />
+          </intent-filter>
+
+          <intent-filter>
+              <action android:name="android.intent.action.SEND_MULTIPLE" />
+              <category android:name="android.intent.category.DEFAULT" />
+              <data android:mimeType="image/*" />
+              <data android:mimeType="video/*" />
+              <data android:mimeType="application/pdf" />
+          </intent-filter>
       </activity>
     </application>
 </manifest>

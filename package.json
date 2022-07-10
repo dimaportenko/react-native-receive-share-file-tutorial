@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "18.0.0",
-    "react-native": "0.69.1"
+    "react-native": "0.69.1",
+    "react-native-receive-sharing-intent": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
