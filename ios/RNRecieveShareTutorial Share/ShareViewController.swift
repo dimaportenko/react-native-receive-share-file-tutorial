@@ -7,7 +7,8 @@ import Photos
 class ShareViewController: SLComposeServiceViewController {
  // TODO: IMPORTANT: This should be your host app bundle identifier
   let hostAppBundleIdentifier = "org.reactjs.native.example.RNRecieveShareTutorial"
-  let shareProtocol = "dimaportenko" //share url protocol (must be unique to your app, suggest  let sharedKey = "ShareKey"
+  let shareProtocol = "dimaportenko" //share url protocol (must be unique to your app, suggest  
+  let sharedKey = "ShareKey"
  var sharedMedia: [SharedMediaFile] = []
  var sharedText: [String] = []
  let imageContentType = kUTTypeImage as String
